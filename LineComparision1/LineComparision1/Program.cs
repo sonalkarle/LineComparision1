@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 
 namespace LineComparision
 {
@@ -8,22 +7,25 @@ namespace LineComparision
         static void Main(string[] args)
         {
 
-            Console.WriteLine("Enter the end point of first line");     //Taking input from user
-            int x2 = Convert.ToInt32(Console.ReadLine());               //Convert input in integer format
-            Console.WriteLine("x2 = " + x2);                            //Display input 
-            Console.WriteLine("Enter the end point of second line");    //Convert input in integer format
-            int y2 = Convert.ToInt32(Console.ReadLine());               //Display input
-            Console.WriteLine("y2 = " + y2);
+            Console.WriteLine("Enter the end point of first line");    // Taking input from user
+            int x2 = Convert.ToInt32(Console.ReadLine());              //Conversion
+            Console.WriteLine("x2 = " + x2);                           //Display the input
+            Console.WriteLine("Enter the end point of second line");   //Taking input from user
+            int y2 = Convert.ToInt32(Console.ReadLine());              //Conversion
+            Console.WriteLine("y2 = " + y2);                          //Display the input
 
-            if (x2.Equals(y2))                        //computation
+            if (x2.CompareTo(y2) == 0)                                   //Compuatation
             {
                 Console.WriteLine("First line is equal to second line ");
             }
+            else if (x2 > y2)                                           //Computation
+            {
+                Console.WriteLine("First line is greater than second line");
+            }
             else
             {
-                Console.WriteLine("First line is not equal to second line");
+                Console.WriteLine("Second line is greater than first line");
             }
-
         }
     }
 }
