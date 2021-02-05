@@ -70,6 +70,7 @@ namespace LineComparision
             Console.WriteLine("Length of line L1: " + L2.LenghtCalculation());
             L.Compare(L2);
 
+<<<<<<< HEAD
             Point p3 = new Point(9, 4);
             Point q3 = new Point(4, 8);
             Line L3 = new Line(p3, q3);
@@ -82,17 +83,34 @@ namespace LineComparision
             Console.WriteLine("b2 = " + b2);
 
             if (l2.Equals(b2))                        //computation
+=======
+            Console.WriteLine("Enter the end point of first line");    // Taking input from user
+            int l2 = Convert.ToInt32(Console.ReadLine());              //Conversion
+            Console.WriteLine("l2 = " + l2);                           //Display the input
+            Console.WriteLine("Enter the end point of second line");   //Taking input from user
+            int b2 = Convert.ToInt32(Console.ReadLine());              //Conversion
+            Console.WriteLine("b2 = " + b2);                          //Display the input
+
+            if (l2.CompareTo(b2) == 0)                                   //Compuatation
+>>>>>>> UC3_CheckComapreToMethod
             {
                 Console.WriteLine("First line is equal to second line ");
             }
+            else if (l2 > b2)                                           //Computation
+            {
+                Console.WriteLine("First line is greater than second line");
+            }
             else
             {
-                Console.WriteLine("First line is not equal to second line");
+                Console.WriteLine("Second line is greater than first line");
             }
+<<<<<<< HEAD
 >>>>>>> UC2_CheckEqualMethod
 
             Console.WriteLine("Length of line L2: " + L3.LenghtCalculation());
             L.compareTo(L3);
+=======
+>>>>>>> UC3_CheckComapreToMethod
         }
     }
 }
