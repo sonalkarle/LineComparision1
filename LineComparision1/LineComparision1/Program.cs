@@ -9,13 +9,13 @@ namespace LineComparision
         {
 
             Console.WriteLine("Enter the end point of first line");     //Taking input from user
-            int x2 = Convert.ToInt32(Console.ReadLine());               //Convert input in integer format
-            Console.WriteLine("x2 = " + x2);                            //Display input 
+            int l2 = Convert.ToInt32(Console.ReadLine());               //Convert input in integer format
+            Console.WriteLine("l2 = " + l2);                            //Display input 
             Console.WriteLine("Enter the end point of second line");    //Convert input in integer format
-            int y2 = Convert.ToInt32(Console.ReadLine());               //Display input
-            Console.WriteLine("y2 = " + y2);
+            int b2 = Convert.ToInt32(Console.ReadLine());               //Display input
+            Console.WriteLine("b2 = " + b2);
 
-            if (x2.Equals(y2))                        //computation
+            if (l2.Equals(b2))                        //computation
             {
                 Console.WriteLine("First line is equal to second line ");
             }
