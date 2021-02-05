@@ -6,19 +6,19 @@ namespace LineComparision
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter the value of x1");    // Take x1 value from user
-            int x1 = Convert.ToInt32(Console.ReadLine());  //Convert into integer
-            Console.WriteLine("x1 = " + x1);
-            Console.WriteLine("Enter the value of x2");    // Take x2 value from user
-            int x2 = Convert.ToInt32(Console.ReadLine());  //Convert into integer
-            Console.WriteLine("x2 = " + x2);
-            Console.WriteLine("Enter the value of y1");    // Take y1 value from user
-            int y1 = Convert.ToInt32(Console.ReadLine());  //Convert into integer
-            Console.WriteLine("y1 = " + y1);
-            Console.WriteLine("Enter the value of y2");    // Take y2 value from user
-            int y2 = Convert.ToInt32(Console.ReadLine());  //Convert into integer
-            Console.WriteLine("y2 = " + y2);
-            int a = (((x2 - x1) ^ 2) + ((y2 - y1) ^ 2));
+            Console.WriteLine("Enter the value of l1");    // Take l1 value from user
+            int l1 = Convert.ToInt32(Console.ReadLine());  //Convert into integer
+            Console.WriteLine("l1 = " + l1);
+            Console.WriteLine("Enter the value of l2");    // Take l2 value from user
+            int l2 = Convert.ToInt32(Console.ReadLine());  //Convert into integer
+            Console.WriteLine("l2 = " + l2);
+            Console.WriteLine("Enter the value of b1");    // Take b1 value from user
+            int b1 = Convert.ToInt32(Console.ReadLine());  //Convert into integer
+            Console.WriteLine("b1 = " + b1);
+            Console.WriteLine("Enter the value of b2");    // Take b2 value from user
+            int b2 = Convert.ToInt32(Console.ReadLine());  //Convert into integer
+            Console.WriteLine("b2 = " + b2);
+            int a = (((l2 - l1) ^ 2) + ((b2 - b1) ^ 2));
             Console.WriteLine("Length of line" + (Math.Sqrt(a)));
 
 
